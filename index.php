@@ -124,9 +124,9 @@
 			</div>
 		</div>		
 		<div class="action-block">
-			<div class="wrapper action-block-wrapper">
+			<div class="wrapper action-block__wrapper">
 				<div class="action-block__text">
-					<h2>Пройдите обучение у практикующих специалистов</h2>
+					<h2><b>Пройдите обучение</b> у практикующих специалистов</h2>
 					<p>Сбучение по вопросам подтверждения соответствия продукции, маркировки, подтверждения сроков годности, программам производственного контроля и ХАССП и др.</p>
 					<p>Мы можете пройти индивидуальное обучение в группе или организовать повышение квалификации целого отдела компании.</p>
 					<h4><i>Обучаем и дистанционно!</i></h4>
@@ -138,6 +138,45 @@
 						<div class="person__position"><span>специалист по сертификации, преподаватель</span></div>
 					</div>
 				</div>
+				<form action="" class="form action-block__form">
+					<h2>Оставьте номер</h2>
+					<p>Чтобы получить консультацию</p>
+					<div class="box form__options">
+						<label class="custom-radio custom-radio--whatsapp">
+							<input type="radio" name="communication" value="whatsapp" class="custom-radio__input" checked />
+							<i class="fab fa-whatsapp custom-radio__icon"></i>
+							<span class="custom-radio__caption">WhatsApp</span>
+						</label>
+						<label class="custom-radio custom-radio--viber">
+							<input type="radio" name="communication" value="viber" class="custom-radio__input" />
+							<i class="fab fa-viber custom-radio__icon"></i>
+							<span class="custom-radio__caption">Viber</span>
+						</label>
+						<label class="custom-radio custom-radio--telegram">
+							<input type="radio" name="communication" value="telegram" class="custom-radio__input" />
+							<i class="fab fa-telegram-plane custom-radio__icon"></i>
+							<span class="custom-radio__caption">Telegram</span>
+						</label>
+						<label class="custom-radio custom-radio--email">
+							<input type="radio" name="communication" value="email" class="custom-radio__input" />
+							<i class="far fa-envelope custom-radio__icon"></i>
+							<span class="custom-radio__caption">Почта</span>
+						</label>
+						<label class="custom-radio custom-radio--phone">
+							<input type="radio" name="communication" value="phone" class="custom-radio__input" />
+							<i class="far fa-phone custom-radio__icon"></i>
+							<span class="custom-radio__caption">Телефон</span>
+						</label>
+					</div>
+					<div class="form__inner">
+						<label class="field">
+							<input type="text" class="field__input">
+							<span class="field__placeholder">Введите ваш номер</span>
+						</label>
+						<button class="btn btn--block btn--click form__btn">Отправить форму</button>
+						<div class="form__note">Отправляя форму вы соглашаетесь с политикой конфидценциальности</div>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="employees">
@@ -190,6 +229,92 @@
 							<a href="mailto:mail@company.ru" class="person-card__link"><i class="far fa-envelope"></i> mail@company.ru</a>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-block">
+			<div class="wrapper about-block__wrapper">
+				<div class="person about-block__person">
+					<img src="img/employer.png" alt="" class="person__img" />
+					<div class="person__info person__info--small">
+						<div class="person__name"><span>Анна Иванова</span></div>
+						<div class="person__position"><span>директор компании</span></div>
+					</div>
+				</div>
+				<div class="about-block__text">
+					<h2>Коротко о нас</h2>
+					<h4>Мы создали компанию, цель которой убрать все бюрократические препятствия перед настоящими инженерами, творцами и создателями новых продуктов.</h4>
+					<div class="small-slider">
+						<div class="small-slider__item" data-caption="Вы вообще учитесь или где?">Обучаемся и повышаем компетентность. Стараемся быть в курсе всех изменений, связанных с нашей работой.</div>
+						<div class="small-slider__item" data-caption="Узнать про опыт работы">Имеем огромные практический опыт работы в государственных структурах и полное понимание всех процессов работы.</div>
+						<div class="small-slider__item" data-caption="Что на счет ответственности?">Несем полную ответственность за свою работу и готовы отстаивать интересы клиентов на любом уровне.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="gradient-section">
+			<div class="services-block">
+				<div class="wrapper">
+					<div class="services-block__head">
+						<h2 class="services-block__title"></h2>
+						<a href="#" class="services-block__link"></a>
+						<div class="services-block__nav"></div>
+					</div>
+					<div class="services-block__slider"></div>
+				</div>
+			</div>
+		</div>
+		<div class="reviews">
+			<div class="wrapper">
+				<div class="reviews__head">
+					<h2 style="text-align:center">Что самое важное в работе компании?</h2>
+					<h3 style="text-align:center">Выполнение задач своих клиентов. Уже более 5 лет мы помогаем <br>бизнесу становится лучше.</h3>
+				</div>
+			</div>
+			<div class="reviews__slider">
+				<?
+					$reviews = ['Сбербанк','Ростелеком','Икея','Мираторг'];
+					foreach($reviews as $company):
+				?>
+				<div class="review" data-title="<?=$company;?>">
+					<a href="img/review.png" class="review__pic image-link">
+						<img src="img/review.png" alt="">
+					</a>
+					<div class="review__content">
+						<div class="review__author">
+							<img src="img/people/german-oskarovich.png" alt="" class="review__author-photo">
+							<div class="review__author-text">
+								<h4><i>Герман Греф</i></h4>
+								<p>Председатель правления «Сбербанка&nbsp;России»</p>
+							</div>
+						</div>
+						<div class="review__text">
+							<blockquote>В нужные сроки получили весь необходимый пакет документов</blockquote>
+							<p>Выражаем благодарность за проделнную работу. В нужные нам сроки получили весь необходимый пакет документов для запуска нового продукта на рынок.</p>
+							<p>В нужные нам сроки получили весь необходимый пакет документов для запуска нового продукта на рынок. Выражаем благодарность за проделнную работу.</p>
+						</div>
+					</div>
+				</div>
+				<?endforeach?>
+			</div>
+		</div>
+		<div class="brands">
+			<div class="wrapper">
+				<h2>Наши клиенты</h2>
+				<div class="box brands__box">
+					<div class="brands__item"><img src="img/brands/0.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/1.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/2.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/3.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/4.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/2.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/3.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/4.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/1.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/2.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/3.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/1.png" alt=""></div>
+					<div class="brands__item"><img src="img/brands/4.png" alt=""></div>
 				</div>
 			</div>
 		</div>

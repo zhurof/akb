@@ -1,4 +1,17 @@
 ﻿@media(min-width:992px)
+	[type=text],
+	[type=tel],
+	[type=email],
+	[type=url],
+	[type=password],
+	textarea
+		&:hover
+			border-color: #CDCDCD
+		&:focus
+			border-color: $orange
+	.custom-radio
+		&:hover &__caption
+			color: inherit
 	.btn
 		transition: all .15s ease
 		&:hover
