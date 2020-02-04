@@ -40,6 +40,9 @@
 					transition: all .3s ease
 				&:hover>a
 					color: #EC963C
+	.section-link
+		&:hover
+			text-decoration: underline
 	.info-block
 		&__item
 			transition: all .3s ease
@@ -48,6 +51,65 @@
 				border-color: $orange
 		&__item:hover &__link
 			text-decoration: underline
+	.events
+		&__pic
+			img
+				transition: all .3s ease
+		&__main
+			transition: all .3s ease
+			&:hover
+				color: $orange
+		&__main:hover &__pic img
+			opacity: .74
+		&__list
+			a
+				transition: all .3s ease
+				&:hover
+					color: $orange
+	.post-card
+		transition: all .3s ease
+		&:hover
+			color: $orange
+		&__pic
+			img
+				transition: all .3s ease
+		&:hover &__pic img
+			opacity: .74
+	.person-card
+		&__link
+			transition: all .3s ease
+			&:hover
+				color: $orange
+	.services-block
+		&__arrow
+			transition: all .3s ease
+			&:hover
+				background-color: $orange
+				border-color: $orange
+				color: #fff
+	.review__pic
+		transition: all .3s ease
+		&:hover
+			transform: translateY(4px)
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3)
+	.reviews
+		&__arrow
+			opacity: 0
+			transition: all .3s ease
+		&__slider:hover &__arrow
+			opacity: 1
+	.soc-link
+		transition: all .3s ease
+		&:hover
+			background-color: $orange
+			border-color: $orange
+			color: #fff
+	.footer
+		&__nav
+			>li>a
+				transition: all .3s ease
+				&:hover
+					color: $orange
 @media(max-width:1199px)
 	.wrapper
 		max-width: 992px

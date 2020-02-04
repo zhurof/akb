@@ -29,13 +29,12 @@
 			</ul>
 			<div class="header__contacts">
 				<a href="tel:89211234567" class="header__phone">8 (921) 123 45 67</a>
-				<a href="#" class="header__callback">Перезвоните мне!</a>
-			</div>
-			<!--
+				<a href="#callback" class="header__callback modal-link">Перезвоните мне!</a>
+			</div>			
 			<form action="" class="search-form header__search">
-				
-			</form>
-			-->
+				<input type="search" name="s" class="search-form__input" placeholder="Что вы ищете?" />
+				<span class="search-form__close-btn far fa-times"></span>
+			</form>			
 		</div>
 	</header>
 	

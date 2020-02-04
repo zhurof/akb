@@ -1,4 +1,4 @@
-<div class="contacts-block">
+<div class="contacts-block page-section" id="contacts">
 	<div class="wrapper contacts-block__wrapper">
 		<div class="contacts-block__map-wrapper">
 			<div class="contacts-block__map" data-coords="" id="map"></div>

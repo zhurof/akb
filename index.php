@@ -8,15 +8,15 @@
 			</div>
 		</div>
 		<ul class="page-menu">
-			<li><a href="#top">Старт</a></li>
+			<li class="active"><a href="#top">Старт</a></li>
 			<li><a href="#events">Мероприятия</a></li>
 			<li><a href="#news">Новости</a></li>
 			<li><a href="#about">О нас</a></li>
 			<li><a href="#services">Услуги</a></li>
-			<li><a href="#workscheme">Схема работы</a></li>
+			<li><a href="#schema">Схема работы</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
-		<div class="top-block" style="background-image:url(img/top/index.jpg)">
+		<div class="top-block page-section" id="top" style="background-image:url(img/top/index.jpg)">
 			<div class="top-block__decor"></div>
 			<div class="wrapper top-block__wrapper">
 				<div class="top-block__text">
@@ -36,7 +36,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="events">
+		<div class="events page-section" id="events">
 			<div class="wrapper events__wrapper">
 				<div class="events__main">
 					<div class="events__pic">
@@ -45,12 +45,12 @@
 					</div>
 					<div class="events__main-date">21.01.2020</div>
 					<p>Провели семинар «Основные принципы сертификации продукции и услуг, соответствие европейским директивам» в Санкт-Петербурге</p>
-					<a href="" class="events__main-link"></a>
+					<a href="#" class="events__main-link"></a>
 				</div>
 				<div class="events__text">
 					<div class="events__head">
 						<h3 class="events__title">Наши мероприятия</h3>
-						<a href="#" class="events__link">Все</a>
+						<a href="#" class="section-link events__link">Все</a>
 					</div>
 					<table class="events__list">
 						<tbody>
@@ -79,16 +79,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="news-block">
+		<div class="news-block page-section" id="news">
 			<div class="wrapper">
 				<div class="news-block__head">
 					<h2 class="news-block__title">Пишем о рынке и жизни нашей компании</h2>
-					<a href="" class="news-block__link">Все новости</a>
+					<a href="#" class="section-link news-block__link">Все новости</a>
 				</div>
 				<div class="box news-block__box">
 					<div class="post-card">
 						<a href="#" class="post-card__pic">							
 							<span class="tag post-card__tag">Новости компании</span>
+							<img src="img/dummy.svg" alt="" />
 						</a>
 						<div class="post-card__text">
 							<h3><a href="#">Открыли новую учебную программу для специалистов по сертификации</a></h3>
@@ -106,6 +107,7 @@
 					<div class="post-card">
 						<a href="#" class="post-card__pic">							
 							<span class="tag post-card__tag">Новости компании</span>
+							<img src="img/dummy.svg" alt="" />
 						</a>
 						<div class="post-card__text">
 							<h3><a href="#">Открыли новую учебную программу для специалистов по сертификации</a></h3>
@@ -232,7 +234,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="about-block">
+		<div class="about-block page-section" id="about">
 			<div class="wrapper about-block__wrapper">
 				<div class="person about-block__person">
 					<img src="img/employer.png" alt="" class="person__img" />
@@ -253,14 +255,88 @@
 			</div>
 		</div>
 		<div class="gradient-section">
-			<div class="services-block">
+			<div class="services-block page-section" id="services">
 				<div class="wrapper">
 					<div class="services-block__head">
-						<h2 class="services-block__title"></h2>
-						<a href="#" class="services-block__link"></a>
+						<h2 class="services-block__title">Всю бумажную работу возьмем на себя</h2>
+						<a href="#" class="section-link services-block__link">Все услуги</a>
 						<div class="services-block__nav"></div>
 					</div>
-					<div class="services-block__slider"></div>
+					<div class="services-block__slider">
+						<div class="service-card">
+							<img src="img/services/0.png" alt="" class="service-card__img">
+							<div class="service-card__text">
+								<h3>Декларация соответствия</h3>
+								<a href="#" class="btn btn--small btn--thin service-card__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="service-card">
+							<img src="img/services/1.png" alt="" class="service-card__img">
+							<div class="service-card__text">
+								<h3>Паспорт безопасности</h3>
+								<a href="#" class="btn btn--small btn--thin service-card__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="service-card">
+							<img src="img/services/2.png" alt="" class="service-card__img">
+							<div class="service-card__text">
+								<h3>Техническая документация</h3>
+								<a href="#" class="btn btn--small btn--thin service-card__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="service-card">
+							<img src="img/services/3-1.png" alt="" class="service-card__img">
+							<div class="service-card__text">
+								<h3>Анализ <br>маркировки</h3>
+								<a href="#" class="btn btn--small btn--thin service-card__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="service-card">
+							<img src="img/services/4-1.png" alt="" class="service-card__img">
+							<div class="service-card__text">
+								<h3>Срок годности</h3>
+								<a href="#" class="btn btn--small btn--thin service-card__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="service-card">
+							<img src="img/services/5.png" alt="" class="service-card__img">
+							<div class="service-card__text">
+								<h3>ХАССП</h3>
+								<a href="#" class="btn btn--small btn--thin service-card__btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="infographics page-section" id="schema">
+				<div class="wrapper infographics__wrapper">
+					<img src="img/briefcase.png" alt="" class="infographics__img">
+					<div class="infographics__text">
+						<h2>Коротко о том, <br>как мы работаем</h2>
+						<h3>Мы проработали все процессы для того, чтобы сохранить время наших клиентов. Только эффективность и работа на результат.</h3>
+						<div class="box infographics__box">
+							<div class="infographics__item">
+								<img src="img/icons/list.svg" alt="">
+								<h4>1. Заявка</h4>
+								<p>Заполняете электронную заявку на нужную услугу</p>
+							</div>
+							<div class="infographics__item">
+								<img src="img/icons/contract.svg" alt="">
+								<h4>2. Договор</h4>
+								<p>Мы рассчитываем стоимость и готовим <a href="#">договор</a></p>
+							</div>
+							<div class="infographics__item">
+								<img src="img/icons/clock.svg" alt="">
+								<h4>3. Работы</h4>
+								<p>Проводим лаборатоные испытания, готовим документы</p>
+							</div>
+							<div class="infographics__item">
+								<img src="img/icons/briefcase.svg" alt="">
+								<h4>4. Документы</h4>
+								<p>Отправляем по <a href="">почте</a> или курьером документы</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -278,7 +354,7 @@
 				?>
 				<div class="review" data-title="<?=$company;?>">
 					<a href="img/review.png" class="review__pic image-link">
-						<img src="img/review.png" alt="">
+						<img src="img/review-min.png" alt="">
 					</a>
 					<div class="review__content">
 						<div class="review__author">
