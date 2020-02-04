@@ -1,6 +1,8 @@
 ﻿function setCssVariables(){
 	document.documentElement.style.setProperty('--w-height',window.innerHeight + 'px');
 	document.documentElement.style.setProperty('--w-width',document.body.clientWidth + 'px');
+	document.documentElement.style.setProperty('--header-height',$('.header').innerHeight() + 'px');
+	
 	var topBannerHeight = $('.top-banner').filter(':visible').innerHeight() || 0;
 	$('.header')[0].style.setProperty('--topMargin',topBannerHeight + 'px');
 }
@@ -98,9 +100,12 @@ function pageNav(entries, observer){
 		$('.page-menu .active').removeClass('active');
 		$('.page-menu a').filter('[href="#'+element.id+'"]').parent().addClass('active');
 	}
+	if(!entries[0].isIntersecting && element.id){
+		$('.page-menu a').filter('[href="#'+element.id+'"]').parent().removeClass('active');
+	}
 };
 $('.page-section').each(function(){
-	var sectionObserver = new IntersectionObserver(pageNav,{threshold: 1});
+	var sectionObserver = new IntersectionObserver(pageNav,{threshold: .75});
 	sectionObserver.observe(this);
 })
 

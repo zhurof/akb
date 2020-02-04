@@ -1,5 +1,5 @@
 	<div class="gradient-section">
-		<? if(!basename($_SERVER['REQUEST_URI']) == 'contacts.php') include "contacts-block.php";?>
+		<? if(basename($_SERVER['REQUEST_URI']) != 'contacts.php') include "contacts-block.php";?>
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="footer__topline">

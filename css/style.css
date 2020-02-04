@@ -722,6 +722,15 @@ ul > li:last-child {
 .top-block__text h1 {
   color: inherit;
 }
+.top-block__img {
+  width: 107px;
+  position: absolute;
+  top: -10px;
+  left: -50px;
+}
+.top-block__btn {
+  margin: 10px 0 0;
+}
 .top-block__info {
   padding-left: 10px;
 }
@@ -801,7 +810,7 @@ ul > li:last-child {
   position: absolute;
   right: 0;
   top: calc(1.5em - 3px);
-  background-color: currentColor;
+  background-color: #5C8092;
 }
 .page-menu > li:last-child {
   margin-bottom: 0;
@@ -809,11 +818,30 @@ ul > li:last-child {
 .page-menu > li.active {
   color: #EF8031;
 }
+.page-menu > li.active:after {
+  background-color: #EF8031;
+}
 .page-menu > li > a {
   display: block;
   padding: 1em 16px;
   color: inherit;
-  text-align: right;
+}
+.page-menu--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  top: calc(var(--header-height) + 12px);
+  left: 0;
+  color: #000;
+  text-align: left;
+}
+.page-menu--sticky:before {
+  right: auto;
+  left: 2.5px;
+}
+.page-menu--sticky > li:after {
+  right: auto;
+  left: 0;
 }
 
 .tag {
@@ -1894,6 +1922,143 @@ ul > li:last-child {
           flex: 0 0 auto;
 }
 
+.sidebar-page {
+  padding: 45px 0 30px;
+}
+.sidebar-page__head {
+  padding: 0 0 20px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.7);
+}
+.sidebar-page__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sidebar-page__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.sidebar-page__sidebar {
+  width: 280px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-left: 40px;
+  position: relative;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 13px 20px 0;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0391718);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0391718);
+  z-index: 1;
+}
+.service:after {
+  content: "";
+  display: block;
+  background-color: #fcfcfc;
+  border-radius: 0 5px 5px 0;
+  width: 13px;
+  height: calc(100% - 26px);
+  position: absolute;
+  top: 13px;
+  left: 100%;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0391718);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0391718);
+  z-index: -1;
+}
+.service__pic {
+  display: block;
+  width: 220px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  background-color: #EF8031;
+  border-radius: 5px 5px 0 0;
+}
+.service__pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.service__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 30px 96px 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+.service__text {
+  margin: 0 0 auto;
+  font-size: 16px;
+  line-height: 1.375;
+}
+.service__text h3 {
+  font-size: 18px;
+  line-height: normal;
+  color: inherit;
+  margin: 0;
+}
+.service__text h3 a {
+  color: inherit;
+  display: block;
+}
+.service__text h3 a:after {
+  content: "   ";
+  font-size: 14px;
+  line-height: 1.7142857143;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  color: #EF8031;
+}
+.service__price {
+  color: #EF8031;
+  font-size: 19px;
+  line-height: 1.2631578947;
+  margin: 30px 0 0;
+}
+.service__price strong {
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.text-block {
+  padding: 40px 0;
+  font-size: 14px;
+  line-height: 1.4285714286;
+}
+.text-block h4 {
+  margin: 0 0 0.5em;
+}
+.text-block h4:last-child {
+  margin-bottom: 0;
+}
+.text-block p {
+  margin: 0 0 1.2142857143em;
+}
+.text-block p:last-child {
+  margin-bottom: 0;
+}
+
 /*ПОДВАЛ */
 .soc-link {
   display: inline-block;
@@ -2078,6 +2243,13 @@ ul > li:last-child {
   }
   .header__menu > li:hover > a {
     color: #EC963C;
+  }
+
+  .page-menu > li:hover {
+    color: #EF8031;
+  }
+  .page-menu > li:hover:after {
+    background-color: #EF8031;
   }
 
   .section-link:hover {
