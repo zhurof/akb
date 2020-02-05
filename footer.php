@@ -35,13 +35,13 @@
 					</div>
 				</div>
 				<ul class="footer__menu">
-					<li><a href="#">О компании</a></li>
+					<li><a href="about.php">О компании</a></li>
           <li><a href="#">Документы</a></li>
           <li><a href="#">Реквизиты</a></li>
           <li><a href="#">Структура</a></li>
           <li><a href="#">Вакансии</a></li>
           <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="footer__bottomline">
 					© 2020. <a href="#">Политика конфиденциальности</a>

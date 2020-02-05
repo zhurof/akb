@@ -76,12 +76,14 @@ p
 b,strong
 	color: #EC963C
 blockquote
-	margin: 0
+	margin: 1em 0
 	background-color: #F6F6F6
 	padding: 30px 160px 30px 54px
 	font-size: 23/18*1em
 	line-height: 31/23*1
 	position: relative
+	&:last-child
+		margin-bottom: 0
 	&:before
 		content: ''
 		display: inline-block
@@ -91,7 +93,12 @@ blockquote
 		background: url(../img/icons/quotes.svg) no-repeat center/contain
 		right: 30px
 		top: -20px
-
+hr
+	margin: 1em 0
+	height: auto
+	width: 100%
+	border: none
+	border-top: 1px solid #F0F0F0
 *:focus
 	outline: none
 
@@ -153,6 +160,9 @@ textarea
 	position: relative
 	user-select: none
 	text-align: left
+	margin: 0 0 15px
+	&:last-child
+		margin-bottom: 0
 	&__input
 		margin: 0
 	&__placeholder
@@ -172,6 +182,12 @@ textarea
 	&--fill &__placeholder
 		font-size: 11px
 		top: 4px
+.double-field
+	display: flex
+	align-items: flex-start
+	justify-content: space-between	
+	>*
+		flex: 0 1 calc(50% - 9px)
 .custom-radio
 	display: inline-block
 	position: relative
@@ -1611,12 +1627,23 @@ td,th
 	padding: 50px 60px
 	background-color: #fff
 	margin: 0 0 20px
+	&--text
+		strong,b
+			color: inherit
+		img
+			display: block
+			width: calc(100% + 120px)
+			max-width: calc(100% + 120px)
+			margin: 1em 0 1em -60px
 	&__map
 		height: 347px
 		background-color: #ddd
 		margin: 0 -60px
 		&:last-child
 			margin-bottom: -50px
+	hr
+		width: auto
+		margin: 5px -60px
 .file
 	display: flex
 	align-items: flex-start
@@ -1631,6 +1658,8 @@ td,th
 	margin: 0 0 20px
 	&:last-child
 		margin-bottom: 0
+	&--block
+		width: auto
 	&__icon
 		font-size: 26px
 		line-height: 1
@@ -1642,8 +1671,51 @@ td,th
 	&__info
 		font-size: 14px
 		display: block
-		
-	
+.payment
+	max-width: 600px
+	display: flex
+	align-items: flex-start
+	padding: 20px 0 40px
+	&:last-child
+		padding-bottom: 0
+	&__img
+		width: 65px
+		flex: 0 0 auto
+		margin: 0 25px 0 0
+	&__text
+		flex: 1 1 auto
+		margin-top: 7px
+	&__btn
+		margin-top: 7px
+.feedback
+	padding-right: 174px
+	background: 
+		image: url(../img/envelope.png)
+		position: right bottom
+		repeat: no-repeat
+	&__info
+		border-top: 1px solid #F0F0F0
+		padding: 15px 0 25px
+	&__contact
+		display: inline-block
+		color: inherit
+		font-weight: bold
+		margin: 0 30px 0 0
+		vertical-align: top
+		i
+			color: $orange
+			vertical-align: middle
+			margin: 0 3px 0 0
+	&__footer
+		display: flex
+		align-items: center
+	&__btn
+		flex: 0 0 auto
+	&__note
+		font-size: 14px
+		line-height: auto
+		color: #ADADAD
+		padding-left: 26px	
 .social
 	display: flex
 	align-items: baseline

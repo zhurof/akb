@@ -19,11 +19,11 @@
 				<span class="logo__text">Академия качества <br>и безопасности</span>
 			</a>
 			<ul class="header__menu">
-				<li><a href="#">Услуги</a></li>
+				<li><a href="services.php">Услуги</a></li>
 				<li><a href="#">Обучение</a></li>
-				<li><a href="#">О нас</a></li>
+				<li><a href="about.php">О нас</a></li>
 				<li><a href="#">Документы</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="contacts.php">Контакты</a></li>
 				<!--По дизайну этот пункт прям просится в меню. Можно реализовать через пользовательский класс для пункта меню в WP-->
 				<li class="search-btn"><a href="#">Поиск</a></li>
 			</ul>
