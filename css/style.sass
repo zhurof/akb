@@ -40,7 +40,7 @@ body
 	padding: 0
 	position: relative
 	display: flex
-	flex-direction: column
+	flex-direction: column	
 	min-height: 100vh
 	min-width: 320px
 	font:
@@ -300,6 +300,23 @@ ul
 			margin-bottom: 0
 
 /*таблицы*/
+table
+	width: 100%
+	border-collapse: collapse
+	line-height: normal
+	margin: 0 0 1em
+	&:last-child
+		margin-bottom: 0
+td,th
+	vertical-align: top
+	text-align: inherit
+	border-bottom: 1px solid #F0F0F0
+	padding: 1em
+	&:first-child
+		padding-left: 0
+	&:last-child
+		padding-right: 0
+	
 /*контейнеры*/
 .wrapper
 	max-width: 1200px
@@ -1070,7 +1087,7 @@ ul
 		h3
 			font-size: 19px
 			line-height: 24/19
-			margin: 0 0 24/19*1em
+			margin: 0 0 24/19*1em		
 	&__btn
 		margin: auto auto 0
 .section-link
@@ -1440,6 +1457,9 @@ ul
 					font-family: "Font Awesome 5 Pro"
 					font-weight: 400
 					color: $orange
+		ul
+			list-style-image: url(../img/icons/list-marker--simple.svg)
+			padding-left: 1em
 	&__price
 		color: $orange
 		font-size: 19px
@@ -1460,6 +1480,188 @@ ul
 		margin: 0 0 17/14*1em
 		&:last-child
 			margin-bottom: 0
+.pic-block
+	padding: 40px 0
+	&__inner
+		max-width: 780px
+		margin: 0 auto
+		position: relative
+		background-color: #fff
+		border-radius: 5px
+		box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0391718)
+		padding: 70px 50px 60px
+		display: flex
+		align-items: flex-start
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 8px
+			left: 8px
+			width: calc(100% - 16px)
+			height: calc(100% - 16px)
+			border: 1px solid #F4F4F4
+			border-radius: inherit
+			pointer-events: none
+	&__pic
+		width: 270px
+		height: 270px
+		position: relative
+		background-color: $dark
+		flex: 0 0 auto
+		img
+			display: block
+			width: 100%
+			position: absolute
+			bottom: 0
+			right: 40px
+	&__text
+		padding: 12px 0 0 50px
+		flex: 1 1 auto
+		h3
+			font-size: 22px
+			line-height: 30/22*1
+			color: inherit
+			font-weight: inherit
+.slider-block
+	padding: 50px 0 20px
+	&__head
+		margin: 0 0 30px
+	&__slide
+		width: 580px
+		max-width: 100%
+		margin: 0 auto 20px
+		border-radius: 10px
+		overflow: hidden
+		position: relative
+		&.slick-slide
+			margin: 0 10px
+		img
+			display: block
+			width: 100%
+			height: 100%
+			max-height: 350px
+			+obj
+	&__caption
+		display: block
+		margin: 0
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		font-size: 14px
+		line-height: normal
+		font-style: italic
+		padding: 40px 20px 20px
+		background: linear-gradient(to bottom,transparent,#000)
+		color: #fff
+		text-align: center
+	&__arrow
+		position: absolute
+		top: 150px
+		&--prev
+			left: calc(50% - 310px)
+		&--next
+			right: calc(50% - 310px)
+	&__dots
+		margin-top: 30px
+		
+.advantages
+	padding: 20px 0
+	&__item
+		margin: 0 10px 20px
+		flex-basis: 380px
+		text-align: center
+		padding: 0 19px
+		font-size: 16px
+		line-height: 22/16*1
+		img
+			vertical-align: top
+			height: 26px
+			width: auto
+			margin: 0 auto 10px
+		h3
+			font-size: 22px
+			margin: 0 0 .3em
+.simple-card
+	width: 380px
+	margin: 0 10px 35px
+	background-color: #fff
+	position: relative
+	border-radius: 5px
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0391718)
+	padding: 30px 60px 40px 30px
+	font-size: 16px
+	line-height: 22/16*1
+	img
+		display: block
+		height: 40px
+		margin: 0 0 10px -10px
+	p
+		margin: 0 0 .5em
+		&:last-child
+			margin-bottom: 0
+.structure
+	padding: 40px 0
+	&__head
+		border-bottom: 1px solid rgba(218,218,218,.3)
+		padding: 0 0 20px
+		margin: 0 0 40px
+.section
+	padding: 50px 60px
+	background-color: #fff
+	margin: 0 0 20px
+	&__map
+		height: 347px
+		background-color: #ddd
+		margin: 0 -60px
+		&:last-child
+			margin-bottom: -50px
+.file
+	display: flex
+	align-items: flex-start
+	width: max-content
+	max-width: 100%
+	border: 2px solid $dark
+	color: $dark
+	font-size: 16px
+	line-height: normal
+	padding: 15px 50px 20px 20px
+	border-radius: 5px
+	margin: 0 0 20px
+	&:last-child
+		margin-bottom: 0
+	&__icon
+		font-size: 26px
+		line-height: 1
+		flex: 0 0 auto
+		margin: 6px 16px 0 0
+	&__text
+		display: block
+		flex: 1 1 auto
+	&__info
+		font-size: 14px
+		display: block
+		
+	
+.social
+	display: flex
+	align-items: baseline
+	flex-wrap: wrap
+	margin: 0 -20px
+	&__link
+		display: inline-block
+		color: inherit
+		margin: 0 20px 10px
+		line-height: 24/18*1
+		i
+			font-size: 40px
+			line-height: 1
+			vertical-align: middle
+			color: $orange
+			margin: 0 4px 0 0
+		
+	
 /*ПОДВАЛ*/
 .soc-link
 	display: inline-block
@@ -1476,7 +1678,7 @@ ul
 	line-height: 22/16*1
 	line-height: normal
 	&__topline
-		border-top: 1px solid #DADADA
+		border-top: 1px solid rgba(218,218,218,.3)
 		padding: 38px 0
 		display: flex
 		align-items: flex-start

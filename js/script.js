@@ -89,6 +89,16 @@ $('.reviews__slider').slick({
 		return slick.$slides.eq(i).data('title');
 	}
 })
+$('.slider-block__slider').slick({
+	variableWidth: true,
+	centerMode: true,
+	centerPadding: 0,
+	prevArrow: '<span class="slick-arrow slider-block__arrow slider-block__arrow--prev far fa-angle-left" />',
+	nextArrow: '<span class="slick-arrow slider-block__arrow slider-block__arrow--next far fa-angle-right" />',
+	dots: true,
+	dotsClass: 'slick-dots slider-block__dots',
+	customPaging: function(){return ''}
+})
 //модальные окна
 $('.image-link').magnificPopup({type:'image'});
 $('.modal-link').magnificPopup({type:'inline'});
