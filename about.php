@@ -1,6 +1,6 @@
 ﻿<?php	include "header.php";?>	
 	<main>		
-		<div class="top-block page-section" id="top" style="background-image:url(img/top/services.jpg)">
+		<div class="top-block page-section" id="top" style="background-image:url(img/top/about.jpg)">
 			<div class="top-block__decor"></div>			
 			<div class="wrapper top-block__wrapper">
 				<div class="top-block__text">

@@ -9,9 +9,9 @@
 							<span class="logo__text">Академия качества <br>и безопасности</span>
 						</a>
 						<div class="footer__social">
-							<a href="#" class="soc-link fab fa-facebook-f"></a>
-							<a href="#" class="soc-link fab fa-vk"></a>
-							<a href="#" class="soc-link fab fa-telegram-plane"></a>
+							<a href="https://facebook.com" class="soc-link fab fa-facebook-f" target="blank"></a>
+							<a href="https://vk.com" class="soc-link fab fa-vk" target="blank"></a>
+							<a href="https://t.me/berendei" class="soc-link fab fa-telegram-plane" target="blank"></a>
 						</div>
 					</div>
 					<ul class="footer__nav">
@@ -90,6 +90,7 @@
 			</div>
 		</form>
 	</div>
+	<script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&#038;ver=1'></script>
 	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="libs/magnific/magnific-popup.min.js"></script>

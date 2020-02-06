@@ -51,6 +51,132 @@
 								<span class="file__text">Пример декларации о соответствии продукции, включенной в Единый перечень РФ <span class="file__info">Pdf, 5 мб</span></span>
 							</a>
 						</div>
+						<div class="order" id="order">
+							<ul class="order__nav">
+								<li class="active">Заказать онлайн</li>
+								<li>Список документов</li>
+							</ul>
+							<div class="order__body">
+								<form action="" method="post" enctype="multipart/form-data" class="order__tab" style="display: block">
+									<div class="order__section">
+										<p>Вы можете заказать декларацию о соответствии онлайн без личного <br>присутствия в офисе.</p>
+										<p>Заполните форму &nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;Свяжитесь с менеджером &nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;Получите декларацию</p>
+									</div>
+									<div class="order__section">
+										<div class="order__dropdown">
+											<h3 class="order__dropdown-trigger">Компания</h3>
+											<div class="order__dropdown-content">
+												<label class="field">
+													<input type="text" class="field__input">
+													<span class="field__placeholder">Название компании</span>
+													<span class="field__description">Введите название компании, ИНН или адрес</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="order__section">
+										<div class="order__dropdown">
+											<h3 class="order__dropdown-trigger">Продукция</h3>
+											<div class="order__dropdown-content">
+												<div class="field">
+													<div class="select field__select" tabindex="0">
+														<select name="document" class="select__input" tabindex="-1" required>
+															<option value="" selected="" disabled="">Необходимый документ</option>
+															<option>Документ 1</option>
+															<option>Документ 2</option>
+															<option>Документ 3</option>
+														</select>
+														<div class="select__output"></div>
+														<div class="select__placeholder">Необходимый документ</div>													
+														<ul class="select__list">
+															<li>Документ 1</li>
+															<li>Документ 2</li>
+															<li>Документ 3</li>
+														</ul>													
+													</div>
+													<div class="field__description">Выберите из списка</div>
+												</div>
+												<div class="double-field">
+													<label class="field">
+														<input type="text" class="field__input">
+														<span class="field__placeholder">Код ТНВЭД продукции</span>
+													</label>
+													<label class="field">
+														<input type="text" class="field__input">
+														<span class="field__placeholder">Производитель или разработчик</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order__section">
+										<div class="order__dropdown">
+											<h3 class="order__dropdown-trigger">Документы</h3>
+											<div class="order__dropdown-content">
+												<div class="order__docs">
+													<div class="order__docs-text">
+														<ol class="fa-ul">
+															<li><span class="fa-li" style="color:#0AD935"><i class="fal fa-check-circle"></i></span> 1. Паспорт продукта</li>
+															<li><span class="fa-li" style="color:#0AD935"><i class="fal fa-check-circle"></i></span> 2. Сертификат качества</li>
+															<li><span class="fa-li" style="color:#7F7F7F"><i class="fal fa-question-circle"></i></span> 3. ГОСТ по продукту</li>
+														</ol>
+													</div>
+													<div class="file-field order__files">
+														<label class="file-field__drop-zone">
+															<input class="file-field__input" type="file" multiple />
+															<span class="file-field__description">Перетащите документ в это поле или выберите на компьютере</span>
+															<span class="btn btn--small file-field__btn">Выбрать файл</span>
+														</label>
+														<div class="file-field__files">
+														
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order__section">
+										<div class="order__dropdown">
+											<h3 class="order__dropdown-trigger">Контакты</h3>
+											<div class="order__dropdown-content">
+												<div class="double-field">
+													<label class="field">
+														<input type="tel" class="field__input">
+														<span class="field__placeholder">Телефон для связи</span>
+													</label>
+													<label class="field">
+														<input type="email" class="field__input">
+														<span class="field__placeholder">Эл. почта</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order__section">
+										<div class="order__form-footer">
+											<button class="btn order__btn">Отправить форму</button>
+											<div class="order__note">Отправляя форму вы соглашаетесь с политикой конфидценциальности</div>
+										</div>
+									</div>
+								</form>
+								<div class="order__tab">
+									<div class="order__section">
+										<a href="document.pdf" class="file file--block" target="_blank">
+											<i class="fal fa-file-pdf file__icon"></i>
+											<span class="file__text">Пример декларации о соответствии требованиям технических регламентов Евразийского экономического союза (Таможенного союза) <span class="file__info">Pdf, 17 мб</span></span>
+										</a>
+										<a href="document.pdf" class="file file--block" target="_blank">
+											<i class="fal fa-file-pdf file__icon"></i>
+											<span class="file__text">Пример декларации о соответствии требованиям технических регламентов РФ <span class="file__info">Pdf, 5 мб</span></span>
+										</a>
+										<a href="document.pdf" class="file file--block" target="_blank">
+											<i class="fal fa-file-pdf file__icon"></i>
+											<span class="file__text">Пример декларации о соответствии продукции, включенной в Единый перечень РФ <span class="file__info">Pdf, 5 мб</span></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="section" id="news">
 							<h2>Новости по теме</h2>
 							<div class="news-widget">
@@ -72,6 +198,20 @@
 										<div class="post-card__text">
 											<h3><a href="#">Закон об ужесточении сертификации пищевых продуктов принят в первом чтении</a></h3>
 										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section" id="consult">
+							<h2>Получить консультацию</h2>
+							<div class="contact">
+								<img src="img/people/maltsev.png" alt="" class="contact__img">
+								<div class="contact__text">
+									<h3>Егор Мальцев</h3>
+									<p>Специалист по сертификации</p>
+									<div class="contact__info">
+										<a href="tel:88121234556" class="contact__link"><i class="far fa-phone"></i> <span>8 (812) 123-45-56</span></a>
+										<a href="mailto:mail@company.ru" class="contact__link"><i class="far fa-envelope"></i> <span>mail@company.ru</span></a>
 									</div>
 								</div>
 							</div>

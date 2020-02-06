@@ -38,7 +38,7 @@
 						<div class="section" id="address">
 							<h2>Адрес</h2>
 							<p>Санкт-Петербург, ул. Мира 5, офис 304</p>
-							<div class="section__map" id="map"></div>
+							<div class="section__map" id="map" data-coords="59.959197,30.314557"></div>
 						</div>
 						<div class="section" id="requisites">
 							<h2>Реквизиты</h2>

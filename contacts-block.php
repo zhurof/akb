@@ -1,7 +1,8 @@
 <div class="contacts-block page-section" id="contacts">
 	<div class="wrapper contacts-block__wrapper">
 		<div class="contacts-block__map-wrapper">
-			<div class="contacts-block__map" data-coords="" id="map"></div>
+			<!--смещаем слегка центр, чтобы метка не была под текстом-->
+			<div class="contacts-block__map" data-coords="59.959197,30.314557" data-center="59.959197,30.310557" id="map"></div>
 			<div class="contacts-block__info">
 				<h4>Телефон</h4>
 				<p><a href="tel:+88121234556"><strong>8 (812) 123-45-56</strong></a></p>
