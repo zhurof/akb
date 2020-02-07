@@ -48,15 +48,15 @@
 				</div>
 			</div>
 			<div class="slider-block__slider">
-				<figure class="slider-block__slide">
+				<figure class="slider-block__slide image-link" data-mfp-src="img/slider/2.png">
 					<img src="img/slider/0.png" alt="">
 					<figcaption class="slider-block__caption">Подпись к изображению</figcaption>
 				</figure>
-				<figure class="slider-block__slide">
+				<figure class="slider-block__slide image-link" data-mfp-src="img/slider/2.png">
 					<img src="img/slider/1.png" alt="">
 					<figcaption class="slider-block__caption">Подпись к изображению</figcaption>
 				</figure>
-				<figure class="slider-block__slide">
+				<figure class="slider-block__slide image-link" data-mfp-src="img/slider/2.png">
 					<img src="img/slider/2.png" alt="">
 					<figcaption class="slider-block__caption">Подпись к изображению</figcaption>
 				</figure>
@@ -90,26 +90,31 @@
 				</div>
 				<div class="box structure__box">
 					<div class="simple-card">
+						<a href="#" class="simple-card__link"></a>
 						<img src="img/icons/diploma.svg" alt="">
 						<p><strong>6 человек</strong></p>
 						<h3>Государственная регистрация продуктации</h3>
 					</div>
 					<div class="simple-card">
+						<a href="#" class="simple-card__link"></a>
 						<img src="img/icons/flask.svg" alt="">
 						<p><strong>8 человек</strong></p>
-						<h3><b>Химическая продукция</b></h3>
+						<h3>Химическая продукция</h3>
 					</div>
 					<div class="simple-card">
+						<a href="#" class="simple-card__link"></a>
 						<img src="img/icons/draft.svg" alt="">
 						<p><strong>12 человек</strong></p>
 						<h3>Разработка технических документов</h3>
 					</div>
 					<div class="simple-card">
+						<a href="#" class="simple-card__link"></a>
 						<img src="img/icons/manager.svg" alt="">
 						<p><strong>3 человека</strong></p>
 						<h3>Работа с иностранными клиентами</h3>
 					</div>
 					<div class="simple-card">
+						<a href="#" class="simple-card__link"></a>
 						<img src="img/icons/award.svg" alt="">
 						<p><strong>8 человек</strong></p>
 						<h3>Маркировка продукции</h3>

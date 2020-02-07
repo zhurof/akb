@@ -15,7 +15,7 @@
 			<div class="wrapper">
 				<div class="sidebar-page__inner">
 					<div class="sidebar-page__main">
-						<div class="section" id="contact-us">
+						<div class="section page-section" id="contact-us">
 							<h2>Свяжитесь с нами</h2>
 							<p>Звонки по России бесплатны</p>
 							<table>
@@ -35,12 +35,12 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="section" id="address">
+						<div class="section page-section" id="address">
 							<h2>Адрес</h2>
 							<p>Санкт-Петербург, ул. Мира 5, офис 304</p>
 							<div class="section__map" id="map" data-coords="59.959197,30.314557"></div>
 						</div>
-						<div class="section" id="requisites">
+						<div class="section page-section" id="requisites">
 							<h2>Реквизиты</h2>
 							<table>
 								<tbody>
@@ -67,7 +67,7 @@
 								<span class="file__text">Реквизиты компании <span class="file__info">Pdf, 178 кб</span></span>
 							</a>
 						</div>
-						<div class="section" id="payment">
+						<div class="section">
 							<h2>Способы оплаты</h2>							
 							<div class="payment">
 								<img src="img/icons/phone-pay.svg" alt="" class="payment__img">
@@ -97,7 +97,7 @@
 								</div>								
 							</div>
 						</div>
-						<div class="section feedback" id="question">
+						<div class="section feedback page-section" id="question">
 							<h2>Задать вопрос</h2>
 							<p>Мы работаем каждый день кроме субботы и воскресения и 9-00 до 18-00</p>
 							<div class="feedback__info">
@@ -126,7 +126,7 @@
 								</div>
 							</form>
 						</div>
-						<div class="section" id="social">
+						<div class="section page-section" id="social">
 							<h2>Социальные сети</h2>
 							<p>Подписывайтесь на нас в социальных сетях</p>
 							<div class="social">

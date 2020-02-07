@@ -205,7 +205,7 @@ function pageNav(entries, observer){
 	} */
 };
 $('.page-section').each(function(){
-	var sectionObserver = new IntersectionObserver(pageNav,{threshold: 1});
+	var sectionObserver = new IntersectionObserver(pageNav,{threshold: .2, rootMargin: '-70px 0px -50% 0px'});
 	sectionObserver.observe(this);
 })
 
@@ -215,6 +215,10 @@ $('.page-menu a').click(function(e){
 	if(target.length){
 		$('html,body').animate({
 			scrollTop: target.offset().top - $('.header').innerHeight()
+		},function(){
+			//intersectionObserver не всегда корректно определяет элемент после такой прокрутки, особенно если просматриваемых секций несколько на экране
+			//Поэтому перестраховываюсь
+			$(e.target).parent().addClass('active').siblings().removeClass('active');
 		})
 	}
 })

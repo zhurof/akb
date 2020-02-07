@@ -20,7 +20,7 @@
 				<div class="sidebar-page__inner">
 					<div class="sidebar-page__main">
 						<div class="catalog">
-							<div class="service" id="serv0">
+							<div class="service page-section" id="serv0">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/0.png" alt="">
 								</a>
@@ -32,7 +32,7 @@
 									<div class="service__price">от <strong>11 200 р.</strong></div>
 								</div>
 							</div>
-							<div class="service" id="serv1">
+							<div class="service page-section" id="serv1">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/1.png" alt="">
 								</a>
@@ -43,7 +43,7 @@
 									<div class="service__price">от <strong>5 000 р.</strong></div>
 								</div>
 							</div>
-							<div class="service" id="serv2">
+							<div class="service page-section" id="serv2">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/2.png" alt="">
 								</a>
@@ -55,7 +55,7 @@
 									<div class="service__price">от <strong>5 000 р.</strong></div>
 								</div>
 							</div>
-							<div class="service" id="serv3">
+							<div class="service page-section" id="serv3">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/3.png" alt="">
 								</a>
@@ -71,7 +71,7 @@
 									<div class="service__price">от <strong>40 100 р.</strong></div>
 								</div>
 							</div>
-							<div class="service" id="serv4">
+							<div class="service page-section" id="serv4">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/4.png" alt="">
 								</a>
@@ -83,7 +83,7 @@
 									<div class="service__price">от <strong>54 000 р.</strong></div>
 								</div>
 							</div>
-							<div class="service" id="serv5">
+							<div class="service page-section" id="serv5">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/5.png" alt="">
 								</a>
@@ -94,7 +94,7 @@
 									<div class="service__price">от <strong>43 000 р.</strong></div>
 								</div>
 							</div>
-							<div class="service" id="serv6">
+							<div class="service page-section" id="serv6">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/6.png" alt="">
 								</a>
@@ -106,7 +106,7 @@
 									<div class="service__price">по договоренности</div>
 								</div>
 							</div>
-							<div class="service" id="serv7">
+							<div class="service page-section" id="serv7">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/7.png" alt="">
 								</a>
@@ -118,7 +118,7 @@
 									<div class="service__price">по договоренности</div>
 								</div>
 							</div>
-							<div class="service" id="serv8">
+							<div class="service page-section" id="serv8">
 								<a href="service.php" class="service__pic">
 									<img src="img/services/8.png" alt="">
 								</a>

@@ -16,7 +16,7 @@
 			<div class="wrapper">
 				<div class="sidebar-page__inner">
 					<div class="sidebar-page__main">
-						<div class="section section--text" id="docs">
+						<div class="section page-section section--text" id="docs">
 							<h2>Виды документов</h2>
 							<p>Существует несколько видов подобных документов:</p>
 							<ul>
@@ -30,13 +30,13 @@
 							<blockquote>Орган по сертификации лишь выполняет функцию лица, уполномоченного на регистрацию декларации, при этом не несет ответственности за её содержание.</blockquote>
 							<p>Поэтому все риски недостоверного декларирования ложатся на плечи заявителя. Штрафы за недостоверное декларирование составляют сотни тысяч, миллионы рублей. Кроме того, при недобросовестном исполнении органом по сертификации своих функций (например, выдача сертификатов, регистрация деклараций на основании “липовых” протоколов), Федеральная служба по аккредитации вправе аннулировать все выданные этим органом сертификаты и зарегистрированные декларации за год, даже те, которые были оформлены без нарушений.</p>
 						</div>
-						<div class="section section--text" id="purpose">
+						<div class="section page-section section--text" id="purpose">
 							<h2>Назначение</h2>
 							<p>Декларация о соответствии продукции является документом, необходимым для выхода продукции в оборот на территории РФ и ЕАЭС.</p>
 							<p>Таким образом, правильное отнесение продукции к объектам обязательного подтверждения соответствия, корректно оформленный отбор образцов (проб), безупречное сопровождение необходимыми документами, точно определенные контролируемые показатели безопасности, и, наконец, грамотно оформленная декларация о соответствии и её технически правильная регистрация  – являются залогом успешного выпуска продукта на рынок и его дальнейшего обращения.</p>
 							<p><strong><i>Компания АНО «Академия качества и безопасности» готова подключиться на любом этапе и оказать качественную поддержку Вашему бизнесу в части подтверждения соответствия продукции и оформления необходимых документов.</i></strong></p>
 						</div>
-						<div class="section" id="examples">
+						<div class="section page-section" id="examples">
 							<h2>Примеры деклараций</h2>
 							<a href="document.pdf" class="file file--block" target="_blank">
 								<i class="fal fa-file-pdf file__icon"></i>
@@ -51,7 +51,7 @@
 								<span class="file__text">Пример декларации о соответствии продукции, включенной в Единый перечень РФ <span class="file__info">Pdf, 5 мб</span></span>
 							</a>
 						</div>
-						<div class="order" id="order">
+						<div class="order page-section" id="order">
 							<ul class="order__nav">
 								<li class="active">Заказать онлайн</li>
 								<li>Список документов</li>
@@ -177,7 +177,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="section" id="news">
+						<div class="section page-section" id="news">
 							<h2>Новости по теме</h2>
 							<div class="news-widget">
 								<div class="box news-widget__box">
@@ -202,7 +202,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="section" id="consult">
+						<div class="section page-section" id="consult">
 							<h2>Получить консультацию</h2>
 							<div class="contact">
 								<img src="img/people/maltsev.png" alt="" class="contact__img">
@@ -216,7 +216,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="section feedback" id="question">
+						<div class="section page-section feedback" id="question">
 							<h2>Задать вопрос</h2>
 							<p>Мы работаем каждый день кроме субботы и воскресения и 9-00 до 18-00</p>
 							<div class="feedback__info">
