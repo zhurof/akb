@@ -328,14 +328,17 @@ textarea
 		text-align: center
 		padding: 22px 42px
 		position: relative
+		overflow: hidden
 		transition: all .2s ease
 		&--active
 			background-color: transparentize($orange,.7)
 	&__input
+		display: block
 		position: absolute
 		opacity: 0
 		z-index: -1
 		pointer-events: none
+		margin: 0
 	&__description
 		display: block
 		margin: 0 0 1em
@@ -482,6 +485,7 @@ td,th
 	.mfp-content &
 		display: block
 		width: max-content
+		max-width: 100%
 		margin: 0 auto
 /*элементы слайдера*/
 .slick-dots
@@ -603,6 +607,8 @@ td,th
 		transform: translateY(-50%)
 		right: 0
 		cursor: pointer
+.menu-btn
+	display: none
 .header
 	color: #fff
 	position: absolute
@@ -1488,6 +1494,7 @@ td,th
 		+pos
 		background-color: #ddd
 		border-radius: 10px
+		overflow: hidden
 	&__info
 		position: relative
 		z-index: 1
@@ -1723,6 +1730,8 @@ td,th
 		
 .advantages
 	padding: 20px 0
+	&__box
+		justify-content: center
 	&__item
 		margin: 0 10px 20px
 		flex-basis: 380px
@@ -1740,6 +1749,7 @@ td,th
 			margin: 0 0 .3em
 .simple-card
 	width: 380px
+	max-width: calc(100% - 20px)
 	margin: 0 10px 35px
 	background-color: #fff
 	position: relative

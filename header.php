@@ -10,8 +10,7 @@
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-	
+<body>	
 	<header class="header">		
 		<div class="wrapper header__wrapper">
 			<a href="/" class="logo header__logo">
@@ -30,7 +29,8 @@
 			<div class="header__contacts">
 				<a href="tel:89211234567" class="header__phone">8 (921) 123 45 67</a>
 				<a href="#callback" class="header__callback modal-link">Перезвоните мне!</a>
-			</div>			
+			</div>
+			<span class="menu-btn"></span>
 			<form action="" class="search-form header__search">
 				<input type="search" name="s" class="search-form__input" placeholder="Что вы ищете?" />
 				<span class="search-form__close-btn far fa-times"></span>

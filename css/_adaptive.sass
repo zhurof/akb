@@ -143,11 +143,88 @@
 				transition: all .3s ease
 				&:hover
 					color: $orange
-@media(max-width:1199px)
+@media(max-width: 1399px)
 	.wrapper
 		max-width: 992px
+		padding: 0 15px
+	.logo
+		&__img
+			margin: 0
+			width: 100%
+		&__text
+			display: none
+	.header
+		&__logo
+			width: 120px
+	.page-menu
+		display: none
+	.top-block
+		&__text
+			padding: 0
+		&__decor
+			width: calc(50% + 120px)
+		&__img
+			display: none
+	.news-block
+		max-width: 100%
+		border-radius: 0
+		box-shadow: none
+		&__box
+			margin: 0 auto
+			max-width: 700px
+			justify-content: center
+	.action-block
+		&__wrapper
+			flex-wrap: wrap
+		&__text
+			flex: 1 1 auto
+			margin: 0 0 50px
+			&:last-child
+				margin-bottom: 0
+		&__form
+			margin-top: 0
+	.employees
+		&__box
+			margin: 0 auto
+			justify-content: center
+			max-width: 700px
+	.infographics
+		&__img
+			width: 320px
+			flex-basis: auto
+			margin: 0 40px 0 0
+		&__text
+			flex: 1 1 auto
+	.contacts-block
+		&__map-wrapper
+			margin: 0 30px 0 0
+			padding: 70px 30px
+	.sidebar-page
+		padding: 25px 0
+		&__inner
+			display: block
+		&__sidebar
+			display: none
+	.text-block
+		padding: 25px 0
+		.sidebar-page + &
+			padding-top: 0
+	.simple-card
+		flex: 0 1 calc(50% - 20px)
+		margin-bottom: 20px
   
 @media(max-width:991px)
+	body
+		font-size: 16px
+	h1
+		font-size: 36px
+	h2
+		font-size: 32px
+	blockquote
+		font-size: 1.1em
+		padding: 25px 60px 25px 25px
+	.box
+		justify-content: center
 	.select
 		&__input
 			z-index: 2
@@ -158,9 +235,554 @@
 			pointer-events: all
 		&__output
 			z-index: 0
+	.menu-btn
+		display: inline-block
+		width: 30px
+		height: 30px
+		position: relative
+		z-index: 4
+		flex: 0 0 auto		
+		-webkit-highlight-color: transparent
+		margin-left: 20px
+		&:before,&:after
+			content: ''
+			display: block
+			position: absolute
+			left: 2.5px
+			width: calc(100% - 5px)
+			border-top: 2px solid
+			transition-property:  transform, border-width
+			transition-duration: .3s
+			transition-timing-function : ease
+		&:before
+			height: 20px
+			top: 5px
+			border-bottom: 2px solid
+		&:after
+			top: calc(50% - 1px)
+		&--active
+			&:before
+				border-width: 1px
+				height: 2px
+				top: calc(50% - 1px)
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
+	.top-banner
+		display: none
+	.search-form
+		&__input
+			border-radius: 0
+	.header
+		padding: 12px 0
+		&__wrapper
+			position: static
+		&__logo
+			margin: 0 10px 0 0
+		&__menu
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			overflow: auto
+			z-index: 4
+			background: url(../img/pattern.svg) repeat rgba(29, 71, 97, 0.97)
+			flex-flow: column nowrap
+			align-items: center
+			text-align: center
+			font-size: 20px
+			padding: 50px 0
+			transition: all .3s ease
+			opacity: 0
+			pointer-events: none
+			&--open
+				opacity: 1
+				pointer-events: auto
+			>li
+				&:first-child
+					margin-top: auto
+				&:last-child
+					margin-bottom: auto
+				>a
+					padding: 10px 20px
+		&__contacts
+			padding: 0
+		&__phone
+			font-size: 0
+			display: inline-block
+			vertical-align: middle
+			margin: 0
+			&:before
+				content: '\f095'
+				font: normal 900 22px/1 "Font Awesome 5 Pro"
+		&__callback
+			display: inline-block
+			font-size: 14px
+			margin-left: 20px
+			vertical-align: middle
+			padding: 5px 0				
+		&__search
+			left: 0
+			width: 100%
+			top: 100%
+			transform: none
+	.top-block
+		padding: 120px 0 60px
+		min-height: 0
+		display: block
+		font-size: 18px
+		&__decor
+			display: none
+		&__text
+			text-align: center
+			margin: 0 auto 60px
+	.info-block
+		flex-direction: column
+		align-items: center
+		padding-right: 60px
+	.events
+		&__wrapper
+			display: block
+		&__main
+			margin: 0 0 30px
+		&__pic
+			margin: 0 auto 22px
+			max-width: 480px
+	.news-block
+		margin-top: 0
+		&:before
+			display: none
+		&__head
+			display: block
+			text-align: center
+		&__title
+			margin: 0 0 .2em
+	.action-block
+		&__wrapper
+			display: block
+		&__person
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+		&__form
+			margin: 0 auto
+	.employees
+		&__head
+			text-align: center
+	.about-block
+		padding: 40px 0
+		&__wrapper
+			display: block
+		&__text
+			margin: 30px 0 0
+			width: auto
+			h4
+				font-size: 1.2em
+	.small-slider
+		margin: 30px auto
+		&:last-child
+			margin-bottom: 0
+	.services-block
+		padding: 30px 0
+		&__head
+			display: block
+			text-align: center
+			margin: 0 0 20px
+		&__title
+			margin: 0 0 .3em
+		&__dots
+			margin-top: 20px
+	.infographics
+		padding: 30px 0 15px
+		&__wrapper
+			display: block
+		&__img
+			display: block
+			margin: 0 auto 30px
+		&__item
+			padding: 0
+	.review
+		margin: 0 10px 40px
+	.reviews
+		padding: 30px 0
+		&__head
+			h3
+				font-size: 18px
+		&__slider
+			padding: 0 15px
+			.slick-list
+				margin: 0 -10px
+	.contacts-block
+		padding: 30px 0 20px
+		&__wrapper
+			display: block
+		&__map-wrapper
+			margin: 0
+	.service
+		margin-right: 0
+		&:after
+			display: none
+		&__main
+			padding: 30px
+	.structure
+		&__box
+			justify-content: flex-start
+	.pic-block
+		&__inner
+			max-width: 100%
+			padding: 25px
+			&:before
+				display: none
+		&__pic
+			width: 120px
+			height: 120px
+		&__text
+			padding: 0 0 0 20px
+	.section
+		padding: 30px
+		&--text
+			img
+				max-width: calc(100% + 60px)
+				margin-left: -30px
+		hr
+			margin: 5px -30px
+		&__map
+			margin: 0 -30px 0
+			&:last-child
+				margin-bottom: -30px
+	.order
+		&__nav
+			padding: 0 30px
+		&__section
+			padding: 20px 30px
+		&__dropdown
+			&-content
+				padding-right: 50px
+	.news-widget
+		&__box
+			justify-content: flex-start
+	.footer
+		&__topline
+			padding: 20px 0
+			flex-wrap: wrap
+		&__nav
+			display: none
+		&__menu
+			>li>a
+				padding: 13px	
 
-//@media(max-width:767px)
-	
-
-//@media(max-width:480px)
+@media(max-width:767px)
+	h1
+		font-size: 32px
+	h2
+		font-size: 28px
+	.double-field
+		display: block
+		margin: 0 0 15px
+		&:last-child
+			margin-bottom: 0
+	.news-block
+		&__box
+			max-width: calc(100% + 20px)
+			margin: 0 -10px
+	.employees
+		&__box
+			max-width: calc(100% + 20px)
+			margin: 0 -10px
+	.services-block
+		&__slider
+			margin: 0 auto
+			max-width: 460px		
+	.review
+		flex-direction: column
+		padding: 20px
+		&:before
+			display: none
+		&__pic
+			order: 1
+			width: 180px
+			max-width: 100%
+			margin: 30px auto 0
+		&__text
+			blockquote
+				font-size: 18px
+	.brands
+		padding: 30px 0 40px
+		h2
+			font-size: 28px
+	.contacts-block
+		&__map-wrapper
+			padding: 0
+		&__map
+			position: static
+			height: 300px
+			margin: 0 0 15px
+		&__info
+			width: auto
+	.sidebar-page
+		&__head
+			h2
+				text-align: center
+	.catalog
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -10px
+		justify-content: center
+	.service
+		flex-direction: column
+		width: 260px
+		max-width: calc(100% - 20px)
+		margin: 0 10px 20px
+		&__pic
+			width: 100%
+			height: 240px
+		&__main
+			padding: 20px
+		&__text
+			h3
+				font-size: 16px
+			>*:not(h3)
+				display: none
+	.pic-block
+		&__inner
+			display: block
+		&__pic
+			margin: 0 auto 20px
+		&__text
+			padding: 0
+			h3
+				font-size: 18px
+	.slider-block
+		padding: 20px 0
+		&__slider
+			padding: 0 15px
+			.slick-list
+				margin: 0 -10px
+	.simple-card
+		width: auto
+		max-width: 100%
+		margin: 0 0 20px
+		padding-right: 30px
+	.structure
+		padding: 30px 0 15px
+		&__head
+			margin-bottom: 20px
+		&__box
+			display: block
+			margin: 0
+	.section
+		padding: 30px 15px
+		margin: 0 -15px 20px
+		&--text
+			img
+				max-width: calc(100% + 30px)
+				margin-left: -15px
+		hr
+			margin: 5px -15px
+		&__map
+			margin: 0 -15px
+	.file
+		padding-right: 20px
+	.order
+		margin: 0 -15px 20px
+		&__nav
+			padding: 0 15px
+		&__section
+			padding: 20px 15px
+			&:last-child
+				padding-bottom: 35px
+		&__dropdown
+			&-content
+				padding: 25px 0 0
+		&__docs
+			display: block
+			&-text
+				padding: 0
+				margin: 0 0 20px
+		&__files
+			width: auto
+		&__form-footer
+			display: block
+			text-align: center
+			padding: 0
+		&__btn
+			margin: 0 0 15px
+			&:last-child
+				margin-bottom: 0
+		&__note
+			padding: 0
+	.news-widget
+		&__box
+			justify-content: center
+	.contact
+		&__link
+			display: block
+			margin: 0
+			padding: .5em 0
+			&:nth-child(n+2)
+				margin: 0			
+	.feedback
+		background-image: none
+		&__contact
+			display: block
+			padding: .5em 0
+			margin: 0
+		&__footer
+			display: block
+			text-align: center
+		&__btn
+			margin: 0 0 15px
+		&__note
+			padding: 0
+	.social
+		margin: 0 -15px
+		&__link
+			margin: 0 15px 15px
+@media(max-width:479px)
+	h1
+		font-size: 24px
+	h2
+		font-size: 24px
+	h3
+		font-size: 18px
+	h4
+		font-size: 16px
+	blockquote
+		font-size: inherit
+		padding: .7em
+		&:before
+			right: 10px
+			width: 1.5em
+			height: 1.5em
+			top: -0.75em
+	//спорное решение т.к. возможно будут таблицы с более чем двумя столбцами, но для текущих подходит
+	table,tbody,thead,tfoot,td,th,tr
+		display: block
+	td,th
+		padding: 0
+		border: none
+	tr
+		margin: 0 0 1em
+		&:last-child
+			margin-bottom: 0
+	.header
+		&__callback
+			display: none
+	.info-block
+		padding: 0
+		&__item
+			width: auto
+			padding: 20px
+			margin: 0 0 30px
+			&:last-child
+				margin-bottom: 0
+			&-img
+				display: none
+	.top-block
+		font-size: 16px
+		&__text
+			margin: 0 0 40px
+		&__btn
+			display: block
+			width: 100%
+			padding: 0 10px
+	.events
+		&__main
+			font-size: inherit
+		&__list
+			td,th
+				padding: 0			
+	.action-block
+		padding: 30px 0
+	.person
+		&__info
+			font-size: 16px
+			&--small
+				max-width: 250px
+		&__position
+			padding: 11px 15px
+			width: max-content
+			max-width: calc(100% - 20px)
+	.form
+		padding: 30px 20px
+		margin-bottom: 0
+		&:before,
+		&:after
+			display: none
+	.about-block
+		&__text
+			h4
+				font-size: inherit
+	.small-slider
+		&__item
+			padding: 20px
+			&:before
+				display: none
+	.services-block
+		&__slider
+			max-width: 220px
+	.infographics
+		&__text	
+			h3,h4
+				font-size: inherit
+		&__box
+			display: block
+			margin: 0
+		&__item
+			margin: 0 0 10px
+			text-align: center
+			img
+				margin: 0 auto 13px
+	.review
+		&__author
+			&-photo
+				width: 60px
+				height: 60px
+				margin: 0 10px 0 0
+			&-text
+				font-size: 15px
+				h4
+					font-size: 1.1em
+		&__text
+			blockquote
+				font-size: 1.1em
+	.brands
+		&__item
+			width: calc(50% - 10px)
+			flex: 1 1 auto
+	.order
+		&__nav
+			font-size: 14px
+			>li
+				padding: 1em 0
+	.contact
+		display: block
+		width: auto
+		text-align: center
+		&__img
+			display: block
+			margin: 0 auto 15px
+	.payment
+		display: block
+		&__btn
+			display: block
+			width: 100%
+			padding: 0 10px
+	.social
+		display: block
+		margin: 0
+		&__link
+			display: block
+			margin: 0 0 10px
+	.footer
+		&__topline
+			display: block
+		&__main
+			margin: 0 0 20px
+			text-align: center
+		&__social
+			justify-content: center
+		&__contacts
+			text-align: center
 	

@@ -29,9 +29,16 @@ $('.top-banner__close-btn').click(function(e){
 $('.search-btn').click(function(e){
 	e.preventDefault();
 	$('.header__search').addClass('header__search--active').find('input').focus();
+	$('.header__menu').removeClass('header__menu--open');
+	$('.menu-btn').removeClass('menu-btn--active');
 })
 $('.search-form__close-btn').click(function(){
 	$(this).parents('.search-form').removeClass('header__search--active');
+})
+//меню в шапке
+$('.menu-btn').click(function(){
+	$(this).toggleClass('menu-btn--active');
+	$('.header__menu').toggleClass('header__menu--open');
 })
 
 //поля с плавающим placeholder
@@ -99,7 +106,38 @@ $('.services-block').each(function(index,element){
 		touchThreshold: 100,
 		prevArrow: '<span class="services-block__arrow services-block__arrow--prev far fa-angle-left" />',
 		nextArrow: '<span class="services-block__arrow services-block__arrow--next far fa-angle-right" />',
-		appendArrows: '.services-block:eq('+index+') .services-block__nav'
+		appendArrows: '.services-block:eq('+index+') .services-block__nav',
+		dotsClass: 'slick-dots services-block__dots',
+		customPaging: function(){return ''},
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 4
+				}
+			},{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					arrows: false,
+					dots: true
+				}
+			},{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+					dots: true
+				}
+			},{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					dots: true
+				}
+			}
+		]
 	})
 })
 $('.reviews__slider').slick({
@@ -112,7 +150,18 @@ $('.reviews__slider').slick({
 	dotsClass: 'btn-nav reviews__dots',
 	customPaging: function(slick,i){
 		return slick.$slides.eq(i).data('title');
-	}
+	},
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				variableWidth: false,
+				centerMode: false,
+				arrows: false,
+				adaptiveHeight: true
+			}
+		}
+	]
 })
 $('.slider-block__slider').slick({
 	variableWidth: true,
@@ -122,7 +171,23 @@ $('.slider-block__slider').slick({
 	nextArrow: '<span class="slick-arrow slider-block__arrow slider-block__arrow--next far fa-angle-right" />',
 	dots: true,
 	dotsClass: 'slick-dots slider-block__dots',
-	customPaging: function(){return ''}
+	customPaging: function(){return ''},
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false
+			}
+		},{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				variableWidth: false,
+				centerMode: false,
+				adaptiveHeight: true
+			}
+		}
+	]
 })
 //модальные окна
 $('.image-link').magnificPopup({type:'image'});
